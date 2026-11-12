@@ -46,6 +46,18 @@ const products = [
     specs: ["Sizes: 60\" to 72\"", "GSM: 17"],
     img: "https://www.stoefflerpaper.com/media/fb/fb/6e/1789399134/SP_350150-S_20260914_00_titelbild.webp?ts=1792675345",
   },
+  {
+    name: "News Print Marker Paper",
+    desc: "News print  cad printing plotter paper roll width customized length",
+    specs: ["Sizes: 48\" to 90\"", "GSM: 0.45mm~4mm"],
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVqqRllZ3cwZFUG3DBKXMOzTEGJQQbGyWtYvcN8hMG4A&s=10",
+  },
+  {
+    name: "Sonali A4 Size Offset Paper",
+    desc: " Multi-purpose office paper suited for laser/inkjet printers and copiers.",
+    specs: ["Standard ream contains 500 sheets."],
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpe334kK6pqKdx9Lrf50CySlbIU0svpdfDLpNQ1YuZ8g&s=10",
+  },
 ];
 
 export default function App() {
@@ -118,7 +130,7 @@ export default function App() {
           className="relative z-10 text-center px-4 max-w-4xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
-            A Total Garments <br className="hidden md:block" /> Accessories Solution
+            A Total Packaging & <br className="hidden md:block" /> Accessories Solution
           </h1>
           <p className="py-4 text-lg md:text-xl text-slate-200">
             100% Export oriented Fashion Accessories Manufacturer & Supplier.
@@ -234,7 +246,7 @@ export default function App() {
                 <div className="space-y-4">
                   <p className="flex items-center gap-3">
                     <span className="font-bold text-emerald-700 w-12">Mob:</span>
-                    <a href="tel:+8801865008931" className="hover:text-emerald-700 text-slate-700 transition-colors">01865 00 89 31</a>
+                    <a href="tel:+8801865008931" className="hover:text-emerald-700 text-slate-700 transition-colors">01865 00 89 31(What's app)</a>
                   </p>
                   <p className="flex items-center gap-3">
                     <span className="font-bold text-emerald-700 w-12">Mob:</span>
@@ -251,11 +263,11 @@ export default function App() {
                 <h3 className="text-xl font-bold mb-4 text-slate-800">Locations</h3>
                 <div className="mb-6">
                   <p className="font-semibold text-slate-800 mb-1">Factory:</p>
-                  <p className="text-sm text-slate-600 leading-relaxed">Buripara, Norshinghapur, Earpur, Ashulia, Savar, Dhaka.</p>
+                  <p className="text-sm text-slate-600 leading-relaxed">43/1 Commissioner Road, Shahibagh, Savar, Dhaka.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-slate-800 mb-1">Office:</p>
-                  <p className="text-sm text-slate-600 leading-relaxed">House # 581(3), Floor Main Road, Mirpur DOHS, Dhaka-1216.</p>
+                  <p className="text-sm text-slate-600 leading-relaxed">O.R. Nizam Road,GEC Circle Central Plazza 6th Floor, Chittagong.</p>
                 </div>
               </div>
             </motion.div>
