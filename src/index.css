@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: false;
+  /* Disables default DaisyUI themes so we can just use explicit colors */
+}
+
+html {
+  scroll-behavior: smooth;
+}
