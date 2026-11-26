@@ -2,7 +2,7 @@
 
 A modern, fully responsive single-page business website for a packaging and garment accessories company.
 
-🔗 **Live Demo:** [YOUR_LIVE_LINK_HERE](YOUR_LIVE_LINK_HERE)
+🔗 **Live Demo:** [https://goodpa.vercel.app/](YOUR_LIVE_LINK_HERE)
 
 ---
 

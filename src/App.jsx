@@ -119,10 +119,8 @@ export default function App() {
             PREMIUM QUALITY ASSURED
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight drop-shadow-lg">
-            Your Trusted Partner in <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-200">
-              Packaging & Accessories
-            </span>
+            Good Packaging & Accessories
+
           </h1>
           <p className="text-lg md:text-xl text-indigo-100 max-w-2xl mx-auto mb-10 drop-shadow-md">
             Delivering top-tier trims, branding solutions, and high-quality packaging materials to the apparel and fashion sector.
