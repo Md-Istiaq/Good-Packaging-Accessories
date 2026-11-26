@@ -51,10 +51,10 @@ const products = [
     img: "/images/News Print Marker Paper.webp",
   },
   {
-    name: "Sonali A4 Size Offset Paper",
+    name: "Papertech A4 Size Offset Paper",
     desc: " Multi-purpose office paper suited for laser/inkjet printers and copiers.",
     specs: ["Standard ream contains 500 sheets."],
-    img: "/images/Sonali A4 Size Offset Paper.webp",
+    img: "/images/papertech.jpg",
   },
 ];
 
@@ -74,9 +74,11 @@ export default function App() {
       {/* --- NAVBAR --- */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-2' : 'bg-transparent py-4'}`}>
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-indigo-950 flex items-center gap-2">
-            <div className="w-10 h-10 bg-indigo-900 text-white rounded-lg flex items-center justify-center font-serif italic">GPA</div>
-            <span className="hidden sm:block">Good Packaging & Accessories</span>
+
+          {/* Logo */}
+          <a href="#" className="flex items-center gap-3">
+            <img src="/images/logo.jpeg" alt="Good Packaging Logo" className="h-10 md:h-12 w-auto object-contain" />
+            <span className="hidden sm:block text-xl md:text-2xl font-bold text-indigo-950">Good Packaging</span>
           </a>
 
           <div className="hidden md:flex items-center space-x-8 font-medium text-indigo-950">
@@ -105,11 +107,11 @@ export default function App() {
         )}
       </nav>
 
-      {/* --- HERO SECTION --- */}
+      {/* --- HERO SECTION (Updated Text) --- */}
       <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center md:bg-fixed bg-indigo-950"
-          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+          style={{ backgroundImage: "url('/images/hero-bg.webp')" }}
         >
           <div className="absolute inset-0 bg-indigo-950/80 mix-blend-multiply"></div>
         </div>
@@ -118,10 +120,15 @@ export default function App() {
           <span className="inline-block py-1 px-4 rounded-full bg-indigo-500/30 backdrop-blur-sm border border-indigo-300/30 text-indigo-100 text-sm font-semibold tracking-wider mb-6">
             PREMIUM QUALITY ASSURED
           </span>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight drop-shadow-lg">
-            Good Packaging & Accessories
 
+          {/* Updated Hero Title */}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight drop-shadow-2xl">
+            Good Packaging <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-200">
+              & Accessories
+            </span>
           </h1>
+
           <p className="text-lg md:text-xl text-indigo-100 max-w-2xl mx-auto mb-10 drop-shadow-md">
             Delivering top-tier trims, branding solutions, and high-quality packaging materials to the apparel and fashion sector.
           </p>
@@ -136,25 +143,23 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- WELCOME SECTION (DaisyUI Hero) --- */}
-      <section className="hero  py-20 md:py-24">
+      {/* --- WELCOME SECTION --- */}
+      <section className="hero bg-white py-20 md:py-24">
         <div className="hero-content flex-col lg:flex-row gap-10 lg:gap-16 max-w-6xl mx-auto px-4">
-          {/* Image */}
           <img
             src="/images/welcome-img.webp"
             alt="Good Packaging Warehouse"
-            className="w-full max-w-sm rounded-3xl shadow-2xl object-cover h-[300px] md:h-[400px]"
+            className="max-w-sm rounded-3xl shadow-2xl object-cover h-[300px] md:h-[400px] w-full"
             loading="lazy"
           />
-          {/* Text Content */}
-          <div className="w-full">
+          <div>
             <h1 className="text-3xl md:text-5xl font-bold text-indigo-950 leading-tight">
               Welcome To <br />
-              <span className="bg-indigo-900 text-white px-4 py-2 rounded-xl inline-block mt-3 shadow-lg text-2xl md:text-4xl">
+              <span className="bg-indigo-900 text-white px-3 py-2 md:px-5 md:py-3 rounded-xl inline-block mt-4 shadow-lg text-2xl md:text-4xl lg:text-5xl leading-snug">
                 Good Packaging & Accessories
               </span>
             </h1>
-            <p className="py-6 text-gray-600 text-base md:text-lg leading-relaxed">
+            <p className="py-6 text-gray-600 text-base md:text-lg leading-relaxed mt-2">
               Good Packaging & Accessories is a trusted name in the garment accessory industry, delivering top-tier trims and branding solutions to the apparel and fashion sector. Office in Uttara, Dhaka. We are committed to innovation, craftsmanship, and reliability—ensuring our partners meet global production and fashion standards with confidence.
             </p>
 
@@ -209,11 +214,11 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- DETAILED PRODUCTS SECTION (Modern Cards) --- */}
+      {/* --- DETAILED PRODUCTS SECTION --- */}
       <section id="products" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-indigo-950 mb-4">Our Products</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-indigo-950 mb-4">Our Product Range</h2>
             <div className="w-24 h-1 bg-indigo-600 mx-auto rounded-full mb-6"></div>
           </div>
 
@@ -223,7 +228,6 @@ export default function App() {
                 key={index}
                 className="group bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col hover:-translate-y-1"
               >
-                {/* Inset Image with padding */}
                 <div className="p-3">
                   <div className="relative h-56 rounded-xl overflow-hidden bg-gray-100">
                     <img
@@ -235,7 +239,6 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* Content */}
                 <div className="px-5 pb-6 pt-2 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
                     {product.name}
@@ -244,7 +247,6 @@ export default function App() {
                     {product.desc}
                   </p>
 
-                  {/* Specs */}
                   <div className="mt-auto pt-4 border-t border-gray-100">
                     <h4 className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">
                       Specifications
@@ -265,7 +267,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- CONTACT SECTION (Updated Info) --- */}
+      {/* --- CONTACT SECTION --- */}
       <section id="contact" className="py-20 bg-white relative">
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-start">
@@ -292,7 +294,7 @@ export default function App() {
                   <div className="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center shrink-0 text-xl">📞</div>
                   <div>
                     <h4 className="font-bold text-indigo-950 text-lg">Phone</h4>
-                    <p className="text-gray-600">01865 00 89 31<br />01833 05 26 96</p>
+                    <p className="text-gray-600">01826 12 53 42<br />01833 05 26 96</p>
                   </div>
                 </div>
 
@@ -369,13 +371,29 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 
             <div className="space-y-4">
-              <div className="text-2xl font-bold flex items-center gap-2">
-                <div className="w-10 h-10 bg-white text-indigo-950 rounded-lg flex items-center justify-center font-serif italic">GPA</div>
-                <span>Good Packaging & Accessories</span>
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1 rounded-lg">
+                  <img src="/images/logo.jpeg" alt="Good Packaging Logo" className="h-10 w-auto object-contain" />
+                </div>
+                <span className="text-2xl font-bold">Good Packaging</span>
               </div>
               <p className="text-indigo-200 text-sm leading-relaxed">
                 A trusted name in the garment accessory industry, delivering top-tier trims and branding solutions to the apparel and fashion sector.
               </p>
+
+              <div className="pt-2">
+                <a
+                  href="https://www.facebook.com/share/1CMU6AVQS1/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-indigo-900 rounded-full hover:bg-indigo-800 transition-colors text-white"
+                  aria-label="Facebook Page"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                  </svg>
+                </a>
+              </div>
             </div>
 
             <div>
@@ -397,7 +415,7 @@ export default function App() {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="shrink-0">📞</span>
-                  <span>01865 00 89 31</span>
+                  <span>01826 12 53 42</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="shrink-0">✉️</span>
@@ -426,7 +444,7 @@ export default function App() {
 
       {/* --- FLOATING WHATSAPP BUTTON --- */}
       <a
-        href="https://wa.me/8801865008931"
+        href="https://wa.me/8801826125342"
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform duration-300"
