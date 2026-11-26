@@ -56,6 +56,60 @@ const products = [
     specs: ["Standard ream contains 500 sheets."],
     img: "/images/papertech.jpg",
   },
+  {
+    "name": "UV Stamp Ink",
+    "desc": "Used for creating security markings and re-entry hand stamps that remain hidden under normal light and glow under ultraviolet (UV) light.",
+    "specs": ["Security markings", "Re-entry hand stamps", "Invisible under normal light", "Glows under UV light"],
+    "img": "/images/UV Stamp Ink.jpg"
+  },
+  {
+    "name": "DALO Textile Marker",
+    "desc": "USA Dalo Textile Marker applicable to denim, knitting, woven, silk, cotton, nylon, polyester, and other fabrics. Also used for industrial purposes on glass, plastic, ceramics, metal, and rubber products.",
+    "specs": ["Textile & fabric marking", "Works on denim, cotton, silk, nylon", "Industrial use: glass, plastic, metal"],
+    "img": "/images/DALO Textile Marker.png"
+  },
+  {
+    "name": "JIYA Hook & Loop Tape",
+    "desc": "JIYA specializes in supplying various types of Hook and Loop Tape, with sizes ranging from 10mm to 200mm.",
+    "specs": ["Standard Hook and Loop Tape", "Plastic Injection Hook Tape", "Same-material Hook and Loop Tape", "Custom colors & sizes available"],
+    "img": "/images/JIYA Hook and Loop Tape.jxl"
+  },
+  {
+    "name": "Rabbit Chalk",
+    "desc": "High-quality tailor's chalk used for precise marking on fabrics and textiles during the cutting and stitching process.",
+    "specs": ["Easy to apply", "Clean removal from fabric", "Essential for tailoring"],
+    "img": "/images/Rabbit Chalk.jfif"
+  },
+  {
+    "name": "Graphics Pen",
+    "desc": "Multi-purpose marker pen designed for precise drawing and marking on various surfaces including paper, fabric, and plastics.",
+    "specs": ["Fine point tip", "Quick-drying ink", "Multi-surface use"],
+    "img": "/images/Graphics Pen.jpg"
+  },
+  {
+    "name": "Both Side (Nikto) Tape",
+    "desc": "Strong double-sided adhesive tape used for mounting, crafting, and various industrial applications.",
+    "specs": ["High adhesion strength", "Double-sided", "Easy to apply"],
+    "img": "/images/Both Side Nikto Tape.jfif"
+  },
+  {
+    "name": "Masking Tape",
+    "desc": "Easy-to-tear tape used for masking during painting, bundling materials, and general temporary holding.",
+    "specs": ["Clean removal without residue", "Easy to tear by hand", "Strong paper backing"],
+    "img": "/images/Masking Tape.jfif"
+  },
+  {
+    "name": "H Tape",
+    "desc": "Specialized tape used in the garment industry for hemming, binding, and reinforcing fabric edges.",
+    "specs": ["Strong hold on fabrics", "Multi-purpose binding", "Available in various widths"],
+    "img": "/images/H tape.jpg"
+  },
+  {
+    "name": "Sprint Water Erasable Pen / Pencil",
+    "desc": "High-quality temporary marking tools by Sprint, perfect for precise pattern tracing on fabrics and textiles. Marks are easily removed with water.",
+    "specs": ["Brand: Sprint", "Water erasable", "Ideal for temporary fabric marking", "Available in Pen & Pencil formats"],
+    "img": "/images/Sprint Water Erasable Pen.webp"
+  }
 ];
 
 export default function App() {
